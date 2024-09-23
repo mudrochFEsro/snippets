@@ -1,5 +1,6 @@
 import { db } from '@/db'
 import {notFound} from "next/navigation";
+import SnippetsEditForm from "../../../../components/snippetEditForm";
 
 interface SnippetEditPageProps{
     params:{
@@ -18,7 +19,7 @@ export default async function SnippetEditPage(props: SnippetEditPageProps){
 
     return(
         <div>
-            Editing snippet with id: {id}
+           <SnippetsEditForm snippet={snippet}/>
         </div>
     )
 }
