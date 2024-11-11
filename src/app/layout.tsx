@@ -12,7 +12,7 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
     return (
         <html lang="en">
         <body
-            style={{fontFamily: "courier New"}}
+            style={{fontFamily: "monospace"}}
         >
         <div className="continer mx-auto px-4">
             {children}
